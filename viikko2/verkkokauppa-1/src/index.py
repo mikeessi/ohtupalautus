@@ -2,11 +2,10 @@ from varasto import Varasto
 from pankki import Pankki
 from viitegeneraattori import Viitegeneraattori
 from kauppa import Kauppa
-from kirjanpito import Kirjanpito
+from kirjanpito import the_kirjanpito_olio as kirjanpito
 
 
 def main():
-    kirjanpito = Kirjanpito()
     kauppa = Kauppa()
 
     # kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
