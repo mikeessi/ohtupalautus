@@ -20,7 +20,8 @@ class Ostoskori:
 
     def lisaa_tuote(self, lisattava: Tuote):
         # lisää tuotteen
-        pass
+        self.kori.append(Ostos(lisattava))
+        self.maara += 1
 
     def poista_tuote(self, poistettava: Tuote):
         # poistaa tuotteen
